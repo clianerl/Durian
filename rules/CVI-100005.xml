@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<durian document="https://github.com/DurianCoder/Durian">
+    <name value="LS算法_未打印调用耗时"/>
+    <language value="ls"/>
+    <match mode="regex-only-match"><![CDATA[\[耗时打印\]\[.*_.*\]\[@tmp_mill\]]]></match>
+    <level value="4"/>
+    <test>
+        <case assert="true"><![CDATA[[耗时打印][LS_算法接入_子单委托][@tmp_mill]]]></case>
+    </test>
+    <solution>
+        添加调用耗时打印。
+    </solution>
+    <status value="on"/>
+    <author name="jy" email="jiangying1110@outlook.com"/>
+</durian>

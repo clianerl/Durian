@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<durian document="https://github.com/DurianCoder/Durian">
+    <name value="LS算法_未打印进入日志"/>
+    <language value="ls"/>
+    <match mode="regex-only-match"><![CDATA[.*\(.*进入\[.*_.*\].*\)]]></match>
+    <level value="4"/>
+    <test>
+        <case assert="true"><![CDATA[LogFlow("进入[LS_算法接入_子单委托]");]]></case>
+    </test>
+    <solution>
+        添加进入日志打印。
+    </solution>
+    <status value="on"/>
+    <author name="jy" email="jiangying1110@outlook.com"/>
+</durian>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<durian document="https://github.com/DurianCoder/Durian">
+    <vulnerability name="没有打印日志" vid="100"/>
+    <vulnerability name="接口没有注释" vid="110"/>
+    <vulnerability name="变量重复赋值" vid="120"/>
+    <vulnerability name="变量重复赋值" vid="200"/>
+</durian>

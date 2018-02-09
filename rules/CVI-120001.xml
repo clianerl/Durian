@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<durian document="https://github.com/DurianCoder/Durian">
+    <name value="c++中变量重复赋值"/>
+    <language value="c++"/>
+    <match mode="regex-only-match"><![CDATA[\s=.*ResultSet.*\->]]></match>
+    <level value="4"/>
+    <test>
+        <case assert="true"><![CDATA[a= sResultSet->bbb()]]></case>
+        <case assert="true"><![CDATA[a= sResultSets->bbb()]]></case>
+    </test>
+    <solution>
+        存在变量重复赋值，请检查代码。
+    </solution>
+    <status value="on"/>
+    <author name="jy" email="jiangying1110@outlook.com"/>
+</durian>

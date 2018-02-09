@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<durian document="https://github.com/DurianCoder/Durian">
+    <name value="LS算法_未打印函数调用报错"/>
+    <language value="ls"/>
+    <match mode="regex-only-match"><![CDATA[\[函数调用报错打印\]\[.*\]]]></match>
+    <level value="4"/>
+    <test>
+        <case assert="true"><![CDATA[[函数调用报错打印][子单委托处理]]]></case>
+    </test>
+    <solution>
+        添加函数调用报错打印。
+    </solution>
+    <status value="on"/>
+    <author name="jy" email="jiangying1110@outlook.com"/>
+</durian>

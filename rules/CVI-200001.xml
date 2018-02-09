@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<durian document="https://github.com/DurianCoder/Durian">
+    <name value="durian静态规则扫描测试"/>
+    <language value="c++"/>
+    <match mode="regex-only-match"><![CDATA[durian]]></match>
+    <level value="1"/>
+    <test>
+        <case assert="true"><![CDATA[a= durian->bbb()]]></case>
+        <case assert="true"><![CDATA[durian= sResultSets->bbb()]]></case>
+    </test>
+    <solution>
+        该文件中存在durian
+    </solution>
+    <status value="on"/>
+    <author name="jy" email="jiangying1110@outlook.com"/>
+</durian>
