@@ -191,7 +191,11 @@ def start_scan_var_reevaluate(target, vulnerability):
     """
     logger.info("{r}深度规则扫描开始...".format(r=vulnerability["id"]))
     t1 = time.time()
-    scan_var_reevaluate(os.path.join(target, "src"), vulnerability)
+    deep_src = os.path.join(target, "src")
+    # 只扫描-t 路径下的src目录
+    if os.path.exists(deep_src):
+        scan_var_reevaluate(os.path.join(target, "src"), vulnerability)
+    logger.warning("-t路径下没有src目录，跳过cvi-{r}.xml规则扫描...".format(r=vulnerability["id"]))
     t2 = time.time()
     pool.close()
     pool.join()
