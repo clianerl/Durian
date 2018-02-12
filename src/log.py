@@ -12,8 +12,10 @@ from logging import handlers
 #
 # Copyright (C) 2010-2012 Vinay Sajip. All rights reserved. Licensed under the new BSD license.
 #
+project_path = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 logger = logging.getLogger('CheckTool')
 log_path = 'logs'
+os.chdir(project_path)
 if os.path.isdir(log_path) is not True:
     os.mkdir(log_path, 0o755)
 logfile = os.path.join(log_path, 'codechecktool.log')

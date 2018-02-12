@@ -5,7 +5,7 @@ host:mail.hundsun.com
 port:25
 username:jiangying23707
 # password token better
-password:your_pwd
+password:DurianCoder66.
 # sender should be company email format
 sender:jiangying23707<jiangying23707@hundsun.com>
 receiver: jiangying23707@hundsun.com,
