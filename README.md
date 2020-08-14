@@ -45,4 +45,4 @@
 
 #### 6、测试
 > cli输出到邮箱:</br>
-    `python durian.py -t target_file  -o your_email -r cvi-100001,cvi-100002`
+    `python durian.py -t target_file  -o your_email -r cvi-100001,cvi-100002` 
